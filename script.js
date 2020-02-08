@@ -4,10 +4,8 @@
 // console.log(min(0, -10)); // will output -10
 
 
-
-
-let number1 = 10;
-let number2 = -10;
+let number1 = 1;
+let number2 = 10;
 
 const min = (number1, number2) => {
   if (number1 <= number2) {
@@ -22,18 +20,17 @@ console.log(min(number1, number2));
 // Example Output:
 // console.log(calculateCircumference(5)); // will output 31.4
 
-
-let radius = 40;
-
 const calculateCircumference = radius => {
   let pi = 3.14;
-  let circumference = pi * radius;
+  let circumference = 2* pi * radius;
 
-  return 2 * pi * radius;
+  return circumference;
 
-};
+}; 
 
-console.log(radius);
+console.log(calculateCircumference(10));
+
+
 
 // 3. Write a function searchString that takes a character and then returns how many times it appears in another string argument.
 // Example Output:
@@ -42,10 +39,11 @@ console.log(radius);
 
 const searchString = (characterToFind, stringToSearch) => {
   let found = 0;
-  for (let i = 0; i < stringToSearch.length; i++) {
+  for (let i = 0; i < stringToSearch.length - 1; i++) {
     if (stringToSearch[i] == characterToFind) {
       found++;
     }
   }
   return found;
-};
+}; 
+console.log(searchString("s", "mississippi"));
